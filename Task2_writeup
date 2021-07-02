@@ -1,0 +1,15 @@
+I haven't heard before of the this new programming langauge "Julia". When I first read about Julia I was quite facsinated by its uses as its includes the fast proccessing and the
+fast developing. In short it combine both the benefits of C and pyhton. So then I started about reading the code which was provided to us. Even I read something about Julia but it doesn't
+allow me to understand itself that much fast ;)
+
+So I wasn't able to understand the code. So frankly I understood the major part of the code by googling the commands, although some commands were easy to understand aas some those 
+contained some of the concepts of C and python.
+
+So I started with the line "println(f(FLAG))". It was written that FLAG is already defined in secrets.jl . So I went through out the code and was able to understand a littile bit of 
+the trick which is happening.
+
+Firstly it is converting the string 'a' to a vector 's'. Then it randomly allocates the idices of the vector to 'x' which is equal to half the number of total indices. Then 
+allocates the remaining of the indices to 'y'.
+
+Now it is converting the the vector 's' corresponding to 'x' value to "Float64" and corresponding to 'y' value to "Int64". And now it is again applying the function 'f' on 'o'.
+And since the value of the indices is randomly allocated to 'x' there will be many output possible.
