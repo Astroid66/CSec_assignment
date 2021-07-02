@@ -1,0 +1,19 @@
+First of all I downloaded the audio file and I started listening to it. I understood the pattern that only two phrases were being repeated again and again with uneven frquencies.
+So I thought I should represent "never gonna give u more" = 1 and "never gonna get u down" = 0 and started to note down all the corresponding 0's and 1's. 
+
+After applying this all logic I got to know that Shail Jain already gave all this hint beforehand only which I forgot to view. And till now I understood that it has something to do 
+with the binary representation of the alphabets. Now I have to divide the whole set of o's and 1's in smaller chunks. Now I counted the the total number of 0's and 1's which was 
+102. 
+
+So a big problem is that 102 is not an integral multiple of 8 ( inituitively the complete set should be divided into pieces each having 8 digits for 8 bits ). So I went throught
+the repo again and found that there was another update that the voice is updated. I repeated the whole lot of same steps for this audio. And surprisingly I got mostly similar set except
+there were 2 additional 0's in the starting. This made there total to be 104 which is indeed an integral multiple of 8. So this helped me know that I am going in the right direction.
+
+So now I divided the whole set into pieces each having 8 digits. And compared to the standard ASCII code of the characters. Ultimately I got a wierd looking message as 
+"4ud1o_i5_n1c3". In the starting starting when I was getting a mixture of digits and alphabets I thought It to be the code for joining MS teams of the CSec;). Subsequently,I thought 
+my approach is wrong because it didn't made any sense. Then I started doing the first auido by dividing it 6 each piece. But that was way too absurd as compared to the 8 divisions one.
+
+So I thought so much and just focused on the 8 digit vala question ( as it made much more sense than any other method). And apparenttly when I read "i5" to be is and "n1c" to be something
+related to nice or nic. That was the time when understood that the message is "Audio_is_nice" as the code showed "4ud1o_i5_n1c3" is queite similar in writing.
+
+And that was the time when decoded the message.
