@@ -1,15 +1,27 @@
-I haven't heard before of the this new programming langauge "Julia". When I first read about Julia I was quite facsinated by its uses as its includes the fast proccessing and the
-fast developing. In short it combine both the benefits of C and pyhton. So then I started about reading the code which was provided to us. Even I read something about Julia but it doesn't
-allow me to understand itself that much fast ;)
+I haven't heard before of the this new programming langauge "Julia". I started about reading the code which was provided to us and then I tried to run the given code.
 
-So I wasn't able to understand the code. So frankly I understood the major part of the code by googling the commands, although some commands were easy to understand aas some those 
-contained some of the concepts of C and python.
+For my first run, I initialised "FLAG" to be "std"(any random name). So I got the output. And through my observation and my understanding of the code I got know that the no. of 
+elements in the ifnal output is the same no. of alphabets in "FLAG". So I got my first clue that "FLAG" is 34 lettered message.
 
-So I started with the line "println(f(FLAG))". It was written that FLAG is already defined in secrets.jl . So I went through out the code and was able to understand a littile bit of 
-the trick which is happening.
+So in the code if u notice that the output is random, but one thing to notice that for any one alphabet there are only two possible cases : 1st being(odd) = 4*a + 1 and 2nd being 
+(even) = 2*a. So I tried initialising "FLAG" to be a single alphabet and note down the possible outcomes of each alphabet. So here was the list which I got in starting:
 
-Firstly it is converting the string 'a' to a vector 's'. Then it randomly allocates the idices of the vector to 'x' which is equal to half the number of total indices. Then 
-allocates the remaining of the indices to 'y'.
+a : 194 = 2*97
+    389 = 4*97 + 1
+b : 196 = 2*98
+    393 = 4*98 + 1
+c : 198 = 2*99
+    397 = 4*99 + 1
+  :
+  :
+  :
+and so on.
 
-Now it is converting the the vector 's' corresponding to 'x' value to "Float64" and corresponding to 'y' value to "Int64". And now it is again applying the function 'f' on 'o'.
-And since the value of the indices is randomly allocated to 'x' there will be many output possible.
+Now notice ASCII code of a = 97 , b = 98 and c = 99. So this indicates that the vector 'o' CONTAIN THE ASCII CODE OF EACH ALPHABET contained in the message. So now I started 
+decoding the the string "FLAG". There can be two cases possible :
+
+1. If the output is even = divide by 2 and the resultant is the ASCII code of the alphabet.
+2. If the output is odd = first subatract 1 and then divide by 4. The resultant will be the ASCII code of the alphabet.
+
+Using the above two methods, I got the "FLAG" to be = "flag{mu1tipl3_di5p4tch_1s_4we50me}" which is quite similar to "flag{mulitple_dispatch_is_awesome}"
+
