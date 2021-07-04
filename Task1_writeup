@@ -1,7 +1,15 @@
-To be frank, I had just used github only once before and I wasn't so familiar with it. But this task 1 helped me a lot in exploring Github more in a very interesting way. 
+To be frank, I had just used github only once before and I wasn't so familiar with it. But this task helped me a lot in exploring Github more, in a very interesting way. 
 
-First of all, I went to find the first flag of the task, which was finding the all the branches of the current repository. Which I found in the drop down menu under the name of the repository.
-Then the last flag to be found was commit to the branch. That clearly above the write up, in the commit "coomit".
+First of all, I went to find the first part of flag, in the file it was written that the first part of is the type og hash used for git.the hash is computed by "SHA-1" algorithm. Then we have to navigate
+thruogh the commits of the file.
+In the commit "coomit", it was written that the second part of the flag is the default name of the branch name given by github for a new repository. So as of now the default name
+given to new branch is 'main'.
 
-Then the third flag was to find the forks of the repository. So in order to find the forks I actually forked the repository ;).Then I found out the forks of the repository in the insights section
-below the name of the repository. And then I completed the last flag of the task which was to automate tasks on github.
+Then the third flag was to find the forks of the repository.Then I found out the forks of the repository in the insights section below the name of the repository. So. it said that
+the last part of the flag is the mechanism to automate tasks on github. So exactly I wasn't able to find a single word for the mechanism but I found the tools which are used to 
+automate things, which is "CI/CD".
+
+So in my view, the three parts of the flag are:
+1.SHA-1
+2.main
+3.CI/CD
